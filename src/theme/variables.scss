@@ -11,6 +11,22 @@
     --ion-color-favorite-contrast-rgba: 255,255,255,0.5;
     --ion-color-favorite-shade: #bebebe;
     --ion-color-favorite-tint: #b4b4b4;
+
+    .icon-buttons-1 {
+      width: 20%; 
+      margin-right:20px,
+    }
+    
+    .icon-buttons {
+      width: 40%; 
+      margin-right:20px,
+    }
+    
+    .buttons-appli {
+      height: 80px ;
+      background-color: #fff !important;
+      // opacity: 0.50;
+    }
   }
  
   /** primary **/
