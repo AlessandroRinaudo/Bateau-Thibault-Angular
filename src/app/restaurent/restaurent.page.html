@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    
+    <div id="title-home">
+      <h2>Restaurants partenaires</h2>
+    </div>
+    <div id="reste">
+    <p class="text-en-gras">
+      Tous les restaurants partenaires bateau de Thibault
+    </p>
+    <p>
+      06. 63.99.99.78
+      <br>
+      lebateaudethibault@gmail.com
+      <br>
+      www.facebook.com/lebateaudethibault
+    </p>
+  </div>
+
+  <ion-row>
+    <ion-col offset-4>
+      <ion-button expand="full" color="favorite" class="buttons-appli"><img class="icon-buttons"> Bistrot des Gascons</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="favorite" class="buttons-appli"> <img class="icon-buttons"> Le fous de l'île</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button expand="full" color="favorite" class="buttons-appli"><img class="icon-buttons"> Bistrot Landais</ion-button>
+    </ion-col>
+    <ion-col offset-4>
+      <ion-button expand="full" color="favorite" class="buttons-appli"> <img class="icon-buttons"> Villa 9-Trois</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/recettes']" expand="full" color="favorite" class="buttons-appli"> <img class="icon-buttons">Bistrot du Sommelier</ion-button>
+    </ion-col>
+    <ion-col offset-4>
+      <ion-button expand="full" color="favorite" class="buttons-appli"><img class="icon-buttons">Devenez Partenaire!</ion-button>
+    </ion-col>
+  </ion-row>
+
+</div>
+</ion-content>
