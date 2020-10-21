@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'vue2',
+    loadChildren: () => import('./vue2/vue2.module').then( m => m.Vue2PageModule)
+  },
 ];
 
 @NgModule({
