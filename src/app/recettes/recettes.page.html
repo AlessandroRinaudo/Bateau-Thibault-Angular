@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+
+  <div id="container">
+    
+    <div id="title-home">
+      <h2>Nos recettes</h2>
+    </div>
+    <div id="reste">
+    <p class="text-en-gras">
+      Toutes les recettes du bateau de Thibault
+    </p>
+    <p>
+      06. 63.99.99.78
+      <br>
+      lebateaudethibault@gmail.com
+      <br>
+      www.facebook.com/lebateaudethibault
+    </p>
+  </div>
+
+  <ion-row>
+    <ion-col offset-4>
+      <ion-button expand="full" color="favorite" class="buttons-appli"><img class="icon-buttons" src= "../assets/icons/recettes/homardRecette_icon.png"> Homard</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="favorite" class="buttons-appli"> <img class="icon-buttons" src= "../assets/icons/recettes/saintJacques.png"> St Jacques</ion-button>
+    </ion-col>
+    <ion-col offset-4>
+      <ion-button expand="full" color="favorite" class="buttons-appli"><img class="icon-buttons" src= "../assets/icons/recettes/barRecette_icon.png"> Bar</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="full" color="favorite" class="buttons-appli"> <img class="icon-buttons" src= "../assets/icons/poulpe.png"> Tourteau</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/recettes']" expand="full" color="favorite" class="buttons-appli"> <img class="icon-buttons" src= "../assets/icons/poulpe.png" >  Recette</ion-button>
+    </ion-col>
+    <ion-col offset-4>
+      <ion-button expand="full" color="favorite" class="buttons-appli"><img class="icon-buttons" src= "../assets/icons/poulpe.png"> Recette</ion-button>
+    </ion-col>
+  </ion-row>
+</div>
+</ion-content>
