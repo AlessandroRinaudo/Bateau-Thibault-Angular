@@ -5,7 +5,14 @@
 :root {
   ion-content {
     --background: url(../assets/images/background.png) no-repeat center/cover fixed;
+    --ion-color-favorite: #8181818e;
+    --ion-color-favorite-rgba: 105,187,123,0.1;
+    --ion-color-favorite-contrast: #ffffff;
+    --ion-color-favorite-contrast-rgba: 255,255,255,0.5;
+    --ion-color-favorite-shade: #bebebe;
+    --ion-color-favorite-tint: #b4b4b4;
   }
+ 
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -77,6 +84,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** transparent **/
+  --ion-color-transparent: #9d9fa6;
+  --ion-color-transparent-rgb: 244, 245, 248;
+  --ion-color-transparent-contrast: #000000;
+  --ion-color-transparent-contrast-rgb: 0, 0, 0;
+  --ion-color-transparent-shade: #d7d8da;
+  --ion-color-transparent-tint: #f5f6f9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -189,6 +204,14 @@
     --ion-card-background: #1c1c1d;
   }
 
+  .ion-color-favorite {
+    --ion-color-base: var(--ion-color-favorite);
+    --ion-color-base-rgba: var(--ion-color-favorite-rgba);
+    --ion-color-contrast: var(--ion-color-favorite-contrast);
+    --ion-color-contrast-rgba: var(--ion-color-favorite-contrast-rgba);
+    --ion-color-shade: var(--ion-color-favorite-shade);
+    --ion-color-tint: var(--ion-color-favorite-tint);
+  }
 
   /*
    * Material Design Dark Theme
