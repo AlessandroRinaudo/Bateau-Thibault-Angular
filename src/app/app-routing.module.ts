@@ -32,6 +32,18 @@ const routes: Routes = [
     path: 'product',
     loadChildren: () => import('./product/product.module').then( m => m.ProductPageModule)
   },
+  {
+    path: 'dela-brise',
+    loadChildren: () => import('./dela-brise/dela-brise.module').then( m => m.DelaBrisePageModule)
+  },
+  {
+    path: 'bistrodesgascons',
+    loadChildren: () => import('./bistrodesgascons/bistrodesgascons.module').then( m => m.BistrodesgasconsPageModule)
+  },
+  {
+    path: 'homardenchaud-froid',
+    loadChildren: () => import('./homardenchaud-froid/homardenchaud-froid.module').then( m => m.HomardenchaudFroidPageModule)
+  },
   
 ];
 
