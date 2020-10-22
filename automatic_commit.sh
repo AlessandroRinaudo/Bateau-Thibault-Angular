@@ -1,5 +1,5 @@
 
 git pull
 git add *
-git commit -m "nouvel mise à jour de l'application react native"
+git commit -m "nouvel mise à jour de l'application Angular"
 git push
