@@ -41,6 +41,26 @@ const routes: Routes = [
     path: 'homardenchaud-froid',
     loadChildren: () => import('./pages-statics/homardenchaud-froid/homardenchaud-froid.module').then( m => m.HomardenchaudFroidPageModule)
   },
+  {
+    path: 'saphir',
+    loadChildren: () => import('./pages-statics/bateaux/saphir/saphir.module').then( m => m.SaphirPageModule)
+  },
+  {
+    path: 'gastmicher',
+    loadChildren: () => import('./pages-statics/bateaux/gastmicher/gastmicher.module').then( m => m.GastmicherPageModule)
+  },
+  {
+    path: 'aquilon',
+    loadChildren: () => import('./pages-statics/bateaux/aquilon/aquilon.module').then( m => m.AquilonPageModule)
+  },
+  {
+    path: 'bistrotdesgascons',
+    loadChildren: () => import('./pages-statics/restaurants/bistrotdesgascons/bistrotdesgascons.module').then( m => m.BistrotdesgasconsPageModule)
+  },
+  {
+    path: 'lesfousdelile',
+    loadChildren: () => import('./pages-statics/restaurants/lesfousdelile/lesfousdelile.module').then( m => m.LesfousdelilePageModule)
+  },
   
 ];
 
