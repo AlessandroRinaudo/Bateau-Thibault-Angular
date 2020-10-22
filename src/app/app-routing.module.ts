@@ -34,15 +34,12 @@ const routes: Routes = [
   },
   {
     path: 'dela-brise',
-    loadChildren: () => import('./dela-brise/dela-brise.module').then( m => m.DelaBrisePageModule)
+    loadChildren: () => import('./pages-statics/dela-brise/dela-brise.module').then( m => m.DelaBrisePageModule)
   },
-  {
-    path: 'bistrodesgascons',
-    loadChildren: () => import('./bistrodesgascons/bistrodesgascons.module').then( m => m.BistrodesgasconsPageModule)
-  },
+
   {
     path: 'homardenchaud-froid',
-    loadChildren: () => import('./homardenchaud-froid/homardenchaud-froid.module').then( m => m.HomardenchaudFroidPageModule)
+    loadChildren: () => import('./pages-statics/homardenchaud-froid/homardenchaud-froid.module').then( m => m.HomardenchaudFroidPageModule)
   },
   
 ];
