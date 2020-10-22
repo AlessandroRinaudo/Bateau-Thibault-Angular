@@ -30,12 +30,17 @@
 
     #container {
       text-align: center;
-    
+      margin-top: 40px;
       position: absolute;
       left: 0;
       right: 0;
       top: 40%;
       transform: translateY(-50%);
+    }
+
+    .image-vue {
+      width: 200px;
+	    height: 250px;
     }
     
     // #title-home {
@@ -50,7 +55,7 @@
     }
     #container p {
       font-size: 16px;
-      line-height: 22px;
+      // line-height: 22px;
       font-family: Arial;
     
       color: black;
@@ -80,6 +85,9 @@
     
     .item .item-content {
       background-color: transparent !important;
+    }
+    .espace {
+      margin-top:40px;
     }
     
 
