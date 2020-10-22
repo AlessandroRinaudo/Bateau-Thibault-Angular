@@ -10,6 +10,22 @@ export class ProductPage implements OnInit {
 
   constructor(public http: HttpClient) { }
 
+  getElementFromClient (){
+    this.http.Client
+    .get<any[]>('../assets/data/data.json')
+    .subscribe(
+      (response) => {
+        this.appareils = response;
+        this.appareils = response ;
+        this.emitAppareilSubject();
+      },
+      (error) => {
+        console.log("Problème avec subscribe : "+error)
+      }
+    )
+
+  }
+
   ngOnInit() {
     // this.getData()
   }
