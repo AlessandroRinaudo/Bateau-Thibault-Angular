@@ -61,6 +61,30 @@ const routes: Routes = [
     path: 'lesfousdelile',
     loadChildren: () => import('./pages-statics/restaurants/lesfousdelile/lesfousdelile.module').then( m => m.LesfousdelilePageModule)
   },
+  {
+    path: 'bistrotlandais',
+    loadChildren: () => import('./pages-statics/restaurants/bistrotlandais/bistrotlandais.module').then( m => m.BistrotlandaisPageModule)
+  },
+  {
+    path: 'villa9trois',
+    loadChildren: () => import('./pages-statics/restaurants/villa9trois/villa9trois.module').then( m => m.Villa9troisPageModule)
+  },
+  {
+    path: 'bistrotdusommelier',
+    loadChildren: () => import('./pages-statics/restaurants/bistrotdusommelier/bistrotdusommelier.module').then( m => m.BistrotdusommelierPageModule)
+  },
+  {
+    path: 'saintjacques',
+    loadChildren: () => import('./pages-statics/recettes/saintjacques/saintjacques.module').then( m => m.SaintjacquesPageModule)
+  },
+  {
+    path: 'barrecette',
+    loadChildren: () => import('./pages-statics/recettes/barrecette/barrecette.module').then( m => m.BarrecettePageModule)
+  },
+  {
+    path: 'tourteaulinguine',
+    loadChildren: () => import('./pages-statics/recettes/tourteaulinguine/tourteaulinguine.module').then( m => m.TourteaulinguinePageModule)
+  },
   
 ];
 
