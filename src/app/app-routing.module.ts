@@ -33,7 +33,7 @@ const routes: Routes = [
     loadChildren: () => import('./product/product.module').then( m => m.ProductPageModule)
   },
   {
-    path: 'dela-brise',
+    path: 'vue2/dela-brise',
     loadChildren: () => import('./pages-statics/dela-brise/dela-brise.module').then( m => m.DelaBrisePageModule)
   },
 
@@ -42,35 +42,35 @@ const routes: Routes = [
     loadChildren: () => import('./pages-statics/homardenchaud-froid/homardenchaud-froid.module').then( m => m.HomardenchaudFroidPageModule)
   },
   {
-    path: 'saphir',
+    path: 'vue2/saphir',
     loadChildren: () => import('./pages-statics/bateaux/saphir/saphir.module').then( m => m.SaphirPageModule)
   },
   {
-    path: 'gastmicher',
+    path: 'vue2/gastmicher',
     loadChildren: () => import('./pages-statics/bateaux/gastmicher/gastmicher.module').then( m => m.GastmicherPageModule)
   },
   {
-    path: 'aquilon',
+    path: 'vue2/aquilon',
     loadChildren: () => import('./pages-statics/bateaux/aquilon/aquilon.module').then( m => m.AquilonPageModule)
   },
   {
-    path: 'bistrotdesgascons',
+    path: 'restaurent/bistrotdesgascons',
     loadChildren: () => import('./pages-statics/restaurants/bistrotdesgascons/bistrotdesgascons.module').then( m => m.BistrotdesgasconsPageModule)
   },
   {
-    path: 'lesfousdelile',
+    path: 'restaurent/lesfousdelile',
     loadChildren: () => import('./pages-statics/restaurants/lesfousdelile/lesfousdelile.module').then( m => m.LesfousdelilePageModule)
   },
   {
-    path: 'bistrotlandais',
+    path: 'restaurent/bistrotlandais',
     loadChildren: () => import('./pages-statics/restaurants/bistrotlandais/bistrotlandais.module').then( m => m.BistrotlandaisPageModule)
   },
   {
-    path: 'villa9trois',
+    path: 'restaurent/villa9trois',
     loadChildren: () => import('./pages-statics/restaurants/villa9trois/villa9trois.module').then( m => m.Villa9troisPageModule)
   },
   {
-    path: 'bistrotdusommelier',
+    path: 'restaurent/bistrotdusommelier',
     loadChildren: () => import('./pages-statics/restaurants/bistrotdusommelier/bistrotdusommelier.module').then( m => m.BistrotdusommelierPageModule)
   },
   {
@@ -84,6 +84,10 @@ const routes: Routes = [
   {
     path: 'recettes/tourteaulinguine',
     loadChildren: () => import('./pages-statics/recettes/tourteaulinguine/tourteaulinguine.module').then( m => m.TourteaulinguinePageModule)
+  },
+  {
+    path: 'recettes/xyz',
+    loadChildren: () => import('./pages-statics/recettes/xyz/xyz.module').then( m => m.XyzPageModule)
   },
   
 ];
