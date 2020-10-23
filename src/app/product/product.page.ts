@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {HttpClient} from '@angular/common/http'; 
+import {HttpClient} from '@angular/common/http'; 
 
 @Component({
   selector: 'app-product',
@@ -8,23 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductPage implements OnInit {
 
-  constructor() { }
+  constructor(public http: HttpClient) { }
 
-  // getElementFromClient (){
-  //   this.http.Client
-  //   .get<any[]>('../assets/data/data.json')
-  //   .subscribe(
-  //     (response) => {
-  //       this.appareils = response;
-  //       this.appareils = response ;
-  //       this.emitAppareilSubject();
-  //     },
-  //     (error) => {
-  //       console.log("Problème avec : "+error)
-  //     }
-  //   )
+  getElementFromClient (){
+    this.http
+    .get<any[]>('../assets/data/data.json')
+    .subscribe(
+      (response) => {
+        
+      },
+      (error) => {
+        console.log("Problème avec : "+error)
+      }
+    )
 
-  // }
+  }
 
   ngOnInit() {
     // this.getData()

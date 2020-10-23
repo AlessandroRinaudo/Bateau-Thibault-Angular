@@ -38,7 +38,7 @@ const routes: Routes = [
   },
 
   {
-    path: 'homardenchaud-froid',
+    path: 'recettes/homardenchaud-froid',
     loadChildren: () => import('./pages-statics/homardenchaud-froid/homardenchaud-froid.module').then( m => m.HomardenchaudFroidPageModule)
   },
   {
@@ -74,15 +74,15 @@ const routes: Routes = [
     loadChildren: () => import('./pages-statics/restaurants/bistrotdusommelier/bistrotdusommelier.module').then( m => m.BistrotdusommelierPageModule)
   },
   {
-    path: 'saintjacques',
+    path: 'recettes/saintjacques',
     loadChildren: () => import('./pages-statics/recettes/saintjacques/saintjacques.module').then( m => m.SaintjacquesPageModule)
   },
   {
-    path: 'barrecette',
+    path: 'recettes/barrecette',
     loadChildren: () => import('./pages-statics/recettes/barrecette/barrecette.module').then( m => m.BarrecettePageModule)
   },
   {
-    path: 'tourteaulinguine',
+    path: 'recettes/tourteaulinguine',
     loadChildren: () => import('./pages-statics/recettes/tourteaulinguine/tourteaulinguine.module').then( m => m.TourteaulinguinePageModule)
   },
   
