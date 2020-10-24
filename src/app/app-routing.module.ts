@@ -89,6 +89,10 @@ const routes: Routes = [
     path: 'recettes/xyz',
     loadChildren: () => import('./pages-statics/recettes/xyz/xyz.module').then( m => m.XyzPageModule)
   },
+  {
+    path: 'poisson',
+    loadChildren: () => import('./poisson/poisson.module').then( m => m.PoissonPageModule)
+  },
   
 ];
 
