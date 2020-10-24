@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ConnexionService} from 'src/app/Services/connexion.service'
 
 @Component({
-  selector: 'app-poisson',
-  templateUrl: './poisson.page.html',
-  styleUrls: ['./poisson.page.scss'],
+  selector: 'app-promotion',
+  templateUrl: './promotion.page.html',
+  styleUrls: ['./promotion.page.scss'],
 })
-export class PoissonPage implements OnInit {
-
+export class PromotionPage implements OnInit {
   fichier;
   liste =[];
 
@@ -21,7 +20,7 @@ export class PoissonPage implements OnInit {
     this.connexion.getFichier().subscribe((res)=> {
       this.fichier = res;
       for(let i of this.fichier) {
-        if(i.category==0) {
+        if(i.sale) {
           this.liste.push(i)
         }
       }

@@ -93,6 +93,18 @@ const routes: Routes = [
     path: 'poisson',
     loadChildren: () => import('./poisson/poisson.module').then( m => m.PoissonPageModule)
   },
+  {
+    path: 'coquillage',
+    loadChildren: () => import('./coquillage/coquillage.module').then( m => m.CoquillagePageModule)
+  },
+  {
+    path: 'crustaces',
+    loadChildren: () => import('./crustaces/crustaces.module').then( m => m.CrustacesPageModule)
+  },
+  {
+    path: 'promotion',
+    loadChildren: () => import('./promotion/promotion.module').then( m => m.PromotionPageModule)
+  },
   
 ];
 
