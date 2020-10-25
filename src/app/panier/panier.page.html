@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>panier</ion-title>
+    <div id=head>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/home']" corlor="dark" expand="full"><img style="text-align: center;" class="icon-buttons-1" src= "../assets/icons/product/homeLogo.png"> </ion-button >
+      </ion-col>
+      <ion-col>
+        <div> <img style="text-align: center;" class="icon-buttons-1" src= "../assets/icons/product/navbarbg.png"></div>
+      </ion-col>
+      <ion-col>
+        <ion-button  color="dark" expand="full"><img style="text-align: center;" class="icon-buttons-1" src= "../assets/icons/product/cartLogo.png"></ion-button >
+      </ion-col>
+    </ion-row>
+  </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <div style="margin-top:50px;margin-bottom:0" >
+      <ion-button *ngFor= "let i of panier"  expand="full" class="btn-color" color="dark" class="buttons-appli"> <img class="icon-buttons-1" src= "../assets/icons/poisson.png"> {{i.name}} {{i.price}} €</ion-button>
+    </div>
 </ion-content>
