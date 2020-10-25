@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ConnexionService} from 'src/app/Services/connexion.service'
+import { Router, NavigationExtras } from '@angular/router';
+import { DataService } from '../servizio/data.service'
 
 @Component({
   selector: 'app-poisson',
@@ -11,7 +13,7 @@ export class PoissonPage implements OnInit {
   fichier;
   liste =[];
   panier=[];
-  constructor(public connexion:ConnexionService) { }
+  constructor(public connexion:ConnexionService, private router: Router, private dataService: DataService) { }
 
   ngOnInit() {
     this.affichage()
@@ -42,6 +44,15 @@ export class PoissonPage implements OnInit {
         this.panier=panier2;
       }
     console.log(this.panier)
+  }
+
+  openDetailsWithState() {
+    let navigationExtras: NavigationExtras = {
+      state: {
+        panier:this.panier
+      }
+    };
+    this.router.navigate(['panier'], navigationExtras);
   }
 
 }

@@ -9,7 +9,7 @@
         <div> <img style="text-align: center;" class="icon-buttons-1" src= "../assets/icons/product/navbarbg.png"></div>
       </ion-col>
       <ion-col>
-        <ion-button [routerLink]="['/panier']" color="dark" expand="full"><img style="text-align: center;" class="icon-buttons-1" src= "../assets/icons/product/cartLogo.png"></ion-button >
+        <ion-button [routerLink]="['/panier']" (click)="openDetailsWithState()"  color="dark" expand="full"><img style="text-align: center;" class="icon-buttons-1" src= "../assets/icons/product/cartLogo.png"></ion-button >
       </ion-col>
     </ion-row>
   </div>
