@@ -9,6 +9,7 @@ import {ConnexionService} from 'src/app/Services/connexion.service'
 export class PromotionPage implements OnInit {
   fichier;
   liste =[];
+  panier=[];
 
   constructor(public connexion:ConnexionService) { }
 
@@ -28,4 +29,13 @@ export class PromotionPage implements OnInit {
     })
   }
 
+  ajouterAuPanier(i) {
+    if(!this.panier.includes(i))
+      this.panier.push(i)
+    // else 
+    //  delete this.panier[i]
+    console.log(this.panier)
+  }
+
+  
 }
