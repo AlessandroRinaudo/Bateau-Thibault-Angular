@@ -10,7 +10,7 @@ export class PoissonPage implements OnInit {
 
   fichier;
   liste =[];
-
+  panier=[];
   constructor(public connexion:ConnexionService) { }
 
   ngOnInit() {
@@ -27,6 +27,15 @@ export class PoissonPage implements OnInit {
       }
       console.log(this.liste)
     })
+  }
+
+  ajouterAuPanier(i) {
+    if(!this.panier.includes(i))
+      this.panier.push(i)
+    else {
+      (this.panier).splice(i,1)
+      }
+    console.log(this.panier)
   }
 
 }

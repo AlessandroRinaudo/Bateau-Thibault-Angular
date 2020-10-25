@@ -25,15 +25,22 @@ export class PromotionPage implements OnInit {
           this.liste.push(i)
         }
       }
-      console.log(this.liste)
+      // console.log(this.liste)
     })
   }
 
   ajouterAuPanier(i) {
     if(!this.panier.includes(i))
       this.panier.push(i)
-    // else 
-    //  delete this.panier[i]
+    else {
+     let panier2=[];
+      for(let j of this.panier) {
+        if(j!=i) 
+          panier2.push(j);
+      } 
+        (this.panier).splice(i);
+        this.panier=panier2;
+      }
     console.log(this.panier)
   }
 
