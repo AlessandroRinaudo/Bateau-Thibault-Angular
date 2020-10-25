@@ -33,7 +33,13 @@ export class PoissonPage implements OnInit {
     if(!this.panier.includes(i))
       this.panier.push(i)
     else {
-      (this.panier).splice(i,1)
+     let panier2=[];
+      for(let j of this.panier) {
+        if(j!=i) 
+          panier2.push(j);
+      } 
+        (this.panier).splice(i);
+        this.panier=panier2;
       }
     console.log(this.panier)
   }

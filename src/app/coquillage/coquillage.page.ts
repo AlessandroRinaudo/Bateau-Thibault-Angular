@@ -9,6 +9,7 @@ import {ConnexionService} from 'src/app/Services/connexion.service'
 export class CoquillagePage implements OnInit {
   fichier;
   liste =[];
+  panier=[];
 
   constructor(public connexion:ConnexionService) { }
 
@@ -26,6 +27,21 @@ export class CoquillagePage implements OnInit {
       }
       console.log(this.liste)
     })
+  }
+
+  ajouterAuPanier(i) {
+    if(!this.panier.includes(i))
+      this.panier.push(i)
+    else {
+     let panier2=[];
+      for(let j of this.panier) {
+        if(j!=i) 
+          panier2.push(j);
+      } 
+        (this.panier).splice(i);
+        this.panier=panier2;
+      }
+    console.log(this.panier)
   }
 
 }
